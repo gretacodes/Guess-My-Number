@@ -49,12 +49,17 @@ h1 {
   top: 52%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: "Bungee Inline", cursive;
+  font-family: 'Bungee Inline', cursive;
   font-size: 100px;
   color: black;
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 60px;
+  }
+}
 .number {
   background: black;
   color: white;
@@ -67,14 +72,16 @@ h1 {
   left: 50%;
   transform: translate(-50%, 50%);
   box-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-  font-family: "Bungee Inline", cursive;
+  font-family: 'Bungee Inline', cursive;
 }
 
 .between {
-  font-size: 1.4rem;
+  font-family: 'Nanum Gothic Coding', monospace;
+  font-size: 30px;
   position: absolute;
   top: 2rem;
   right: 2rem;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .again {
@@ -94,7 +101,7 @@ h1 {
   text-align: center;
   display: block;
   margin-bottom: 3rem;
-  font-family: "Bungee Inline", cursive;
+  font-family: 'Bungee Inline', cursive;
 }
 
 .btn {
@@ -105,7 +112,7 @@ h1 {
   padding: 2rem 3rem;
   cursor: pointer;
   box-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-  font-family: "Nanum Gothic Coding", monospace;
+  font-family: 'Nanum Gothic Coding', monospace;
   font-size: 45px;
 }
 
@@ -116,17 +123,27 @@ h1 {
 .message {
   margin-bottom: 8rem;
   height: 3rem;
-  font-family: "Nanum Gothic Coding", monospace;
+  font-family: 'Nanum Gothic Coding', monospace;
   font-size: 45px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .score,
 .highscore,
 .label-score,
 .label-highscore {
-  font-family: "Nanum Gothic Coding", monospace;
+  font-family: 'Nanum Gothic Coding', monospace;
   font-size: 50px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+@media only screen and (max-width: 700px) {
+  .score,
+  .highscore,
+  .label-score,
+  .label-highscore {
+    font-size: 30px;
+  }
+}
 .label-score {
   margin-bottom: 2rem;
 }
